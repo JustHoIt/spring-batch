@@ -11,7 +11,7 @@ spring:
       driver-class-name:  com.mysql.cj.jdbc.Driver
       jdbc-url:  jdbc:mysql://localhost:3306/batch_data?serverTimezone=Asia/Seoul
       username: ${db.username}
-      password: ${db.username}
+      password: ${db.password}
   batch:
     job:
       enabled: false

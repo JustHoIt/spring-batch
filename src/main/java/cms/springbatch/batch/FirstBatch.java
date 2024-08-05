@@ -24,13 +24,15 @@ import java.util.Map;
 
 @Configuration
 public class FirstBatch {
-    private  final JobRepository jobRepository;
-    private  final PlatformTransactionManager platformTransactionManager;
+
+    private final JobRepository jobRepository;
+    private final PlatformTransactionManager platformTransactionManager;
 
     private final BeforeRepository beforeRepository;
     private final AfterRepository afterRepository;
 
     public FirstBatch(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager, BeforeRepository beforeRepository, AfterRepository afterRepository) {
+
         this.jobRepository = jobRepository;
         this.platformTransactionManager = platformTransactionManager;
         this.beforeRepository = beforeRepository;
@@ -46,7 +48,6 @@ public class FirstBatch {
                 .start(firstStep())
                 .build();
     }
-
 
     @Bean
     public Step firstStep() {

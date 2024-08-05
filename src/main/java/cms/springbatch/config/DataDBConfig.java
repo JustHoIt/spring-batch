@@ -17,7 +17,7 @@ import java.util.HashMap;
 @EnableJpaRepositories(
         basePackages = "cms.springbatch.repository",
         entityManagerFactoryRef = "dataEntityManager",
-        transactionManagerRef = "dataTransactionManger"
+        transactionManagerRef = "dataTransactionManager"
 )
 public class DataDBConfig {
     @Bean
